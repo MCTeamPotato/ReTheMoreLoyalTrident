@@ -7,14 +7,14 @@ import net.minecraftforge.fml.config.ModConfig;
 
 @Mod(TheMoreLoyalTrident.MOD_ID)
 public class TheMoreLoyalTrident {
-    public static final String MOD_ID = "moreloyaltrident";
+    public static final String MOD_ID = "remoreloyaltrident";
 
     private static final ForgeConfigSpec CONFIG;
     public static final ForgeConfigSpec.IntValue LEVEL;
 
     static {
         ForgeConfigSpec.Builder builder = new ForgeConfigSpec.Builder();
-        builder.push("TheMoreLoyalTrident");
+        builder.push("ReTheMoreLoyalTrident");
         LEVEL = builder.defineInRange("RequiredLoyaltyLevel", 1, 0, Integer.MAX_VALUE);
         builder.pop();
         CONFIG = builder.build();
